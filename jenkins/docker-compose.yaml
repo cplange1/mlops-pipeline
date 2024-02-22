@@ -9,7 +9,6 @@ services:
         restart: unless-stopped
         environment:
           - "JAVA_OPTS=-Xmx3g -Xms2G"
-        restart: unless-stopped
         volumes:
             - ${HOST_DOCKER}:/var/run/docker.sock
             - ${HOST_JENKINS_DATA}:/var/jenkins_home
